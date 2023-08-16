@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 
 app.post("/create", (req, res) => {
     const { product_name, description, quantity, location, last_updated_user, created_by, attributes } = req.body;
-    const sql = "INSERT INTO inventory (product_name, description, quantity, location, last_updated_user, created_by, attributes) VALUES (?, ?, ?, ?, ?, ?, ?)"; // Corrected typo "INSTERT" to "INSERT"
+    const sql = "INSERT INTO inventory (product_name, description, quantity, location, last_updated_user, created_by) VALUES (?, ?, ?, ?, ?, ?)"; // Corrected typo "INSTERT" to "INSERT"
     const values = [product_name, description, quantity, location, last_updated_user, created_by, attributes];
     db.query(sql, values, (err, data) => {
         if (err) return res.json({ error: "Error" });
