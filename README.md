@@ -4,10 +4,6 @@
 
 > This is the backend server for our inventory management system which can be found [here](https://github.com/Lemodo/info-ag.inventory-management)
 
-<h2>🚀 Frontend demo</h2>
-
-[https://inventar.info-ag.leoboedeker.de](https://inventar.info-ag.leoboedeker.de)
-
 <h2>🛠️ Installation Steps:</h2>
 
 <p>1. Install dependencies</p>
